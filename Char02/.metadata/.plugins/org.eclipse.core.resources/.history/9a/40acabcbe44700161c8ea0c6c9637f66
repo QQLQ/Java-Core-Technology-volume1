@@ -1,0 +1,10 @@
+/**
+ * This applet displays a greeting from the authors.
+ * @version 1.22 2007-04-08
+ * @author Administrator
+ *
+ */
+public class WelcomeApplet {
+	
+	
+}

@@ -1,0 +1,45 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+/**
+ * A program for viewing images.
+ * @version 1.22 2007-05-21
+ * @author Administrator
+ *
+ */
+public class ImageViewer {
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			@Override
+			public void run() {
+				JFrame frame = new ImageViewerFrame();
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setVisible(true);
+			}
+		});
+	}
+}
+
+
+/**
+ * A frame with a label to show an image.
+ */
+class ImageViewerFrame extends JFrame {
+	
+	public ImageViewerFrame() {
+		setTitle("ImageViewer");
+		setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
+		
+		// use a lable to display the images 
+		label = new JLabel();
+		add(label);
+		
+		// set up the file chooser
+		chooser = new JFileChooser();
+		
+	}
+}

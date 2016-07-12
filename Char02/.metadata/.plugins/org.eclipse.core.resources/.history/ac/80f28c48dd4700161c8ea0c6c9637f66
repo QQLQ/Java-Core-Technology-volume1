@@ -1,0 +1,23 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+/**
+ * A program for viewing images.
+ * @version 1.22 2007-05-21
+ * @author Administrator
+ *
+ */
+public class ImageViewer {
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			@Override
+			public void run() {
+				JFrame frame = new ImageViewerFrame();
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE;
+				frame.setVisible(true);
+			}
+		});
+	}
+}
