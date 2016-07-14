@@ -1,2 +1,0 @@
-INDEX VERSION 1.127+F:\Java-Core-Technology-volume1\Chart03\.metadata\.plugins\org.eclipse.jdt.core
-4092327557.index
